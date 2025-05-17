@@ -1,0 +1,42 @@
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .
+
+wandb:
+  project: "calm-pde"
+  entity: "calm-pde"
+
+experiment:
+  name: "CALM-PDE-2D"
+  model_name: "CALM_PDE_Vorticity"
+  model_tag: ""
+  random_seed: 3407
+
+  # Model configuration
+  training_type: "rollout"
+  neural_ode_model_class: "NeuralODE"
+  dropout: 0.0
+  optimizer: "adamw"
+  loss_fn: "rel_l2"
+  scheduler: "cosine"
+  scheduler_warumup_fraction: 0.2
+  batch_size: 32
+  epochs: 500
+  learning_rate: 1.e-3
+
+  # Data configruation
+  dataset: "FNO-1e-4"
+  data_path: "{LOCAL_DIR}/fno_vorticity_datasets/"
+  data_file: "navier_stokes_v1e-4_N10000_T30_u.npy"
+  rollout_steps: 19
+  reduced_resolution: 1
+  reduced_resolution_t: 1
+  truncated_trajectory_length: 30
+  reduced_batch: 1
+  num_workers: 2
