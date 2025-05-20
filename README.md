@@ -13,7 +13,7 @@
 
 
 This repository contains the official PyTorch implementation of the CALM-PDE model from the paper,
-"**CALM-PDE: Continuous and Adaptive Convolutions for Latent Space Modeling of Time-dependent PDEs**".
+"[**CALM-PDE: Continuous and Adaptive Convolutions for Latent Space Modeling of Time-dependent PDEs**](https://arxiv.org/abs/2505.12944)".
 
 ## 🛠️ Requirements
 
@@ -149,3 +149,15 @@ MIT licensed, except where otherwise stated. Please see [`LICENSE`](./LICENSE) f
 
 ## ✏️ Citation
 If you find our project useful, please consider citing it.
+
+```
+@misc{calm-pde-hagnberger:2025,
+      title={{CALM-PDE}: Continuous and {A}daptive {C}onvolutions for {L}atent {S}pace {M}odeling of {T}ime-dependent {PDE}s}, 
+      author={Jan Hagnberger and Daniel Musekamp and Mathias Niepert},
+      year={2025},
+      eprint={2505.12944},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2505.12944}, 
+}
+```
