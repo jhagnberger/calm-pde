@@ -24,7 +24,7 @@ The CALM-PDE model requires and is tested with the following packages.
 - [Einops](https://einops.rocks) in version 0.8.0
 
 
-Please also see the [``environment.yml``](./environment.yml) file which contains all packages to run the provided examples.
+Please also see the [``environment.yml``](./environment.yml) file, which contains all packages to run the provided examples.
 
 
 ## 🚀 Usage of CALM Layers
@@ -124,7 +124,7 @@ To reproduce the results reported in the paper, please follow the instructions b
 ## 🏗️ CALM-PDE Architecture
 The following illustation shows the architecture of the CALM-PDE model for solving 2D time-dependent PDEs (e.g., incompressible Navier-Stokes equations with a cylinder geometry). CALM-PDE consits of three key components:
 
-- Encoder: Encodes the arbitrarly discretized PDE solution into a fixed latent space
+- Encoder: Encodes the arbitrarily discretized PDE solution into a fixed latent space
 - Processor: Computes the latent representation of future timesteps via latent time-stepping
 - Decoder: Decodes the latent representation back to the spatial domain for queried coordinates
 
@@ -136,7 +136,7 @@ Below is a listing of the directory structure of the CALM-PDE repository.
 
 [``📂 calm_pde``](./calm_pde): Contains the code for the CALM-PDE model and the experiments. \
 [``📂 bash``](./bash): Contains bash scripts to run the experiments. \
-[``📂 datasets``](./bash): Contains bash scripts to run download the used datasets.
+[``📂 datasets``](./bash): Contains bash scripts to download the used datasets.
 
 
 ## 🌟 Acknowledgements
