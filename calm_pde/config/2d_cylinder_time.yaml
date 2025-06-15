@@ -20,7 +20,6 @@ experiment:
 
   # Model configuration
   training_type: "rollout"
-
   neural_ode_model_class: "NeuralODE"
   dropout: 0.0
   optimizer: "adamw"

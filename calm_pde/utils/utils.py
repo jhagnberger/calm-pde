@@ -1,6 +1,6 @@
 import wandb
 import torch
-import matplotlib.pyplot as plt
+import torch.nn as nn
 import numpy as np
 from loss.losses import RelL2Loss
 
@@ -130,7 +130,7 @@ def get_optimizer_scheduler_loss(model, config, train_loader, loss_dim=-2):
                                                         max_lr=config.learning_rate,
                                                         pct_start=config.scheduler_warmup_fraction,
                                                         div_factor=1e2, final_div_factor=1e3,
-                                                        total_steps=epochs * len(train_loader))
+                                                        total_steps=config.epochs * len(train_loader))
     elif config.scheduler == "cosine":
         scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, config.epochs * len(train_loader))
     elif config.scheduler == "step":

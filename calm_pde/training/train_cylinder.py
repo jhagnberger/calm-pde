@@ -147,7 +147,7 @@ def run_training(config=None, wandb_config=None):
                 }, model_checkpoint_name + ".pt")
                 
         t2 = default_timer()
-        print('epoch: {0}, t2-t1 (epoch time): {1:.5f}, train loss: {2:.5f}, test loss: {3:.5f}'.format(ep, t2-t1, train_losses["loss"], test_losses["loss"]))
+        print(f"epoch: {ep}, t2-t1 (epoch time): {t2-t1:.5f}, train loss: {train_losses['loss']:.5f}, test loss: {test_losses['loss']:.5f}")
         wandb_dict = {"lr": scheduler.get_last_lr()[0]}
         wandb_dict.update({f"train/{key}": value for key, value in train_losses.items() if value != 0.0})
         wandb_dict.update({f"test/{key}": value for key, value in test_losses.items() if value != 0.0})
@@ -159,4 +159,3 @@ def run_training(config=None, wandb_config=None):
     artifact.add_file(model_checkpoint_name + ".pt")
     run.log_artifact(artifact)
     run.finish()
-
