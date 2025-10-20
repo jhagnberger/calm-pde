@@ -9,6 +9,11 @@
     <a target="_blank" href="https://www.ki.uni-stuttgart.de/institute/team/Musekamp-00001"><strong>Daniel Musekamp</strong></a>,
     <a target="_blank" href="https://matlog.net"><strong>Mathias Niepert</strong></a>
   </p>
+
+  <p align="center">
+    <a href='https://neurips.cc/virtual/2025/poster/120282'><img src="https://img.shields.io/badge/NeurIPS2025%20Conference-Spotlight-red?style=flat&logoSize=auto&labelColor=darkgreen" alt="NeurIPS2025 Spotlight Paper"></a>
+    <a href='https://neurips.cc/virtual/2025/125841'><img src="https://img.shields.io/badge/AI%20for%20Science%20Workshop%40NeurIPS2025-Spotlight-red?style=flat&logoSize=auto&labelColor=darkgreen" alt="NeurIPS AI for Science Workshop Spotlight Paper"></a>
+ </p>
 </p>
 
 
